@@ -1,0 +1,41 @@
+ul {
+  list-style: none;
+}
+
+.list-group-item-heading {
+  font-weight: bold;
+}
+
+.col-md-4 {
+  height: 400px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#todo-wrap {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 400px;
+  transition: left .5s ease-in-out;
+
+  .index-wrap {
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+
+  .content-wrap {
+    width: 50%;
+    height:100%;
+    float:left;
+  }
+
+  .content {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+  }
+}

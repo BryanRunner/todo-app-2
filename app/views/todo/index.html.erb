@@ -1,0 +1,10 @@
+<div class="todo-index">
+  <h2>Todo List</h2>
+
+  <div id="todo-list" class="list-group">
+    <%= render partial: 'item_li', collection: @todos %>
+  </div>
+
+  <%= link_to 'New Item', new_todo_path, id: "new-item", class: 'btn btn-primary', remote: true %>
+
+</div>
