@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TodoApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
+  
+  <div class="col-md-4 col-md-offset-4 settings">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h2>Todo List</h2>
+      </div>
       <div id="todo-wrap">
         <div class="index-wrap">
           <%= yield %>
@@ -20,7 +24,6 @@
       </div>
     </div>
   </div>
-</div>
 
 </body>
 </html>

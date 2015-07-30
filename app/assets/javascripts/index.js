@@ -1,15 +1,22 @@
 $(function(){
 
+  var todoWrap = $('#todo-wrap'),
+      content = $('.content');
+
   $('#new-item').click(function() {
-    $('#todo-wrap').css({left: "-100%"});
+    $(todoWrap).css({left: "-100%"});
   });
 
-  $('.show-link').click(function() {
-    $('#todo-wrap').css({left: "-100%"});
+  $('#todo-list').on('click', '.show-link', function() {
+    $(todoWrap).css({left: "-100%"});
   });
 
-  $('.content').on('click', '.btn-back', function() {
-    $('#todo-wrap').css({left: "0%"});
+  $(content).on('click', '.btn-back', function() {
+    $(todoWrap).css({left: "0%"});
+  });
+
+  $(content).on('click', '.btn-create', function() {
+    $(todoWrap).css({left: "0%"});
   });
 
 });

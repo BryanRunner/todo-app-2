@@ -2,22 +2,34 @@ ul {
   list-style: none;
 }
 
-.list-group-item-heading {
-  font-weight: bold;
+.settings {
+  height: 610px;
+  overflow:hidden;
+  position: relative;
 }
 
-.col-md-4 {
-  height: 400px;
-  position: relative;
-  overflow-x: hidden;
+.panel-primary {
+  height:100%;
+  overflow: hidden;
+  border: 5px solid $brand-primary !important;
+  position:relative;
+
+  .panel-heading {
+    height: 85px;
+  }
+
+  .panel-footer {
+    background-color: #ddd;
+  }
 }
 
 #todo-wrap {
   width: 200%;
   height: 100%;
   position: absolute;
-  top: 0px;
+  top: 85px;
   left: 0px;
+  background-color: #ddd;
   min-height: 400px;
   transition: left .5s ease-in-out;
 
@@ -25,6 +37,7 @@ ul {
     width: 50%;
     height: 100%;
     float: left;
+    overflow:hidden;
   }
 
   .content-wrap {
