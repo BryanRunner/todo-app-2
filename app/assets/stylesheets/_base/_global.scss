@@ -24,11 +24,21 @@ ul {
 }
 
 #notice {
+  height:50px;
   text-align: center;
   font-weight:bold;
+  background-color: #ddd;
+  padding: 0;
+  line-height: 50px;
 
-  .glyphicon-remove {
+  .default-text {
+    opacity: .5;
+  }
+
+  span {
+    line-height: 50px;
     cursor: pointer;
+    margin-right: 5px;
   }
 }
 

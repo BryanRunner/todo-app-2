@@ -16,7 +16,7 @@ $(function(){
   });
 
   $('#notice').on('click', '.glyphicon-remove', function(){
-    $('#notice div').remove();
+    $('#notice').html('<div class="default-text">Notification Center</div>');
   });
 
 });
