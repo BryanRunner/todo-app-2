@@ -15,4 +15,8 @@ $(function(){
     $(todoWrap).css({left: "0%"});
   });
 
+  $('#notice').on('click', '.glyphicon-remove', function(){
+    $('#notice div').remove();
+  });
+
 });

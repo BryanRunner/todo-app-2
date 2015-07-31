@@ -26,7 +26,13 @@ ul {
 #notice {
   text-align: center;
   font-weight:bold;
+
+  .glyphicon-remove {
+    cursor: pointer;
+  }
 }
+
+
 
 #todo-wrap {
   width: 200%;
