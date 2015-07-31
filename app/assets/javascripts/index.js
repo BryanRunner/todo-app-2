@@ -15,8 +15,4 @@ $(function(){
     $(todoWrap).css({left: "0%"});
   });
 
-  $(content).on('click', '.btn-create', function() {
-    $(todoWrap).css({left: "0%"});
-  });
-
 });

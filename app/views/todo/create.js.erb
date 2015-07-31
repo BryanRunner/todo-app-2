@@ -1,2 +1,4 @@
 $('#todo-list').append(' <%= escape_javascript(render partial: "item_li", object: @todo) %> ')
 $('#new_todo_item')[0].reset()
+$('#todo-wrap').css({left: "0%"});
+$("#notice").html("<%= escape_javascript(render partial: 'flash') %>");

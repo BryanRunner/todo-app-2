@@ -13,6 +13,9 @@ class TodoController < ApplicationController
 
   def create
     @todo = TodoItem.create(todo_params)
+    respond_to do |format|
+        format.js { flash.now[:notice] = "Created Successfully"}
+    end
   end
 
   def edit
@@ -22,6 +25,9 @@ class TodoController < ApplicationController
   def update
     @todo = TodoItem.find(params[:id])
     @todo.update_attributes(todo_params)
+      respond_to do |format|
+        format.js { flash.now[:notice] = "Updated Successfully"}
+      end
     return @todo
   end
 
@@ -31,6 +37,9 @@ class TodoController < ApplicationController
 
   def destroy
     @todo = TodoItem.find(params[:id]).destroy
+    respond_to do |format|
+        format.js { flash.now[:notice] = "Deleted Successfully"}
+    end
   end
 
 

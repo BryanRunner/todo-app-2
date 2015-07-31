@@ -23,11 +23,16 @@ ul {
   }
 }
 
+#notice {
+  text-align: center;
+  font-weight:bold;
+}
+
 #todo-wrap {
   width: 200%;
   height: 100%;
   position: absolute;
-  top: 85px;
+  top: 135px;
   left: 0px;
   background-color: #ddd;
   min-height: 400px;

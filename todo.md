@@ -14,9 +14,9 @@
 1. [ ] Completed list, save, delete, clear completed item(s)
 
 #Code that needs cleaned up
-1. [ ] Main application HTML
+1. [x] Main application HTML
 
 # Bugs / Fixes
 1. [x] Fix blank form from being able to be submitted and breaking app
-1. [ ] Fix back button on edit screen to link back to show instead of index
+1. [x] Fix back button on edit screen to link back to show instead of index
 1. [x] Fix padding for .container so it doesn't cutoff form input selected effect
